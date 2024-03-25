@@ -2,16 +2,6 @@
 
 FieldVista is a web application that connects farmers with customers interested in agritourism experiences. It allows farmers to showcase their farms and offer tours, while customers can browse and book these tours.
 
-## Installation
-
-1) Install dependencies: npm install
-2) Configure environment variables: Create a .env file and add your environment variables.
-
-## Usage
-
-## Start the development server:
-npm start
-
 ## Technologies Used:
 React.js
 Express.js
