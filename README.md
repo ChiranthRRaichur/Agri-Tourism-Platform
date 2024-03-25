@@ -8,6 +8,7 @@ FieldVista is a web application that connects farmers with customers interested 
 2) Configure environment variables: Create a .env file and add your environment variables.
 
 #Usage
+
 Start the development server:
 npm start
 
