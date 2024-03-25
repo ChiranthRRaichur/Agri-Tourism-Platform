@@ -8,7 +8,7 @@ Express.js
 MySQL
 
 ## Features:
-Farmers can create profiles for their farms and offer tours.
-Customers can browse farms, view tour details, and book tours.
-User authentication and authorization.
-Responsive design for mobile and desktop.
+1) Farmers can create profiles for their farms and offer tours.
+2) Customers can browse farms, view tour details, and book tours.
+3) User authentication and authorization.
+4) Responsive design for mobile and desktop.
