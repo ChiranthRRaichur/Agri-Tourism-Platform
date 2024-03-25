@@ -1,0 +1,83 @@
+.header {
+  background-color: #fefff7;
+}
+
+.linebg {
+  background-color: rgba(245, 245, 245, 0.23);
+}
+.explore-farms {
+  font-family: "Black Ops One", system-ui;
+  font-size: 32px;
+  padding: 20px;
+  font-weight: 800;
+  text-align: "center";
+  color: bisque;
+  /* animation: colorChange 4s infinite; */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.custom-dropdown {
+  position: relative;
+  margin-left: 50px; /* Adjust the value according to your preference */
+}
+
+.dropdown-button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #16df00;
+  color: rgb(17, 3, 3);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+  background-color: #36de3e;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d9d9d939;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 350px;
+}
+
+.dropdown-content .dropdown-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: #18eb26;
+}
+.dropdown-container:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+.dropdown-button.open {
+  background-color: #a070005a;
+}
+
+.dropdown-button.open + .dropdown-content {
+  display: block;
+}
+
+.join-agri {
+  background-color: rgba(245, 245, 245, 0.61);
+}

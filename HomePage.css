@@ -1,0 +1,644 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; */
+/* background: linear-gradient(to center, #b2b18a 58%, rgb(220, 188, 8) 42%); */
+/* background-color: #013b1875; */
+/* } */
+
+/* HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #0cd805;
+  z-index: 1000;
+  /* z-index: -1; */
+  backdrop-filter: blur(3px);
+  /* Optional: Add a blur effect to the header */
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://muffingroup.com/blog/wp-content/uploads/2021/03/gr.jpg")
+    center/cover no-repeat fixed;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+  opacity: 1;
+}
+
+.bg.scrolled::before {
+  opacity: 0;
+}
+
+#title {
+  font-family: "Black Ops One", system-ui;
+  font-size: 50px;
+  padding-left: 100px;
+  font-weight: 800;
+  transition: color 0.5s ease;
+  background: linear-gradient(147deg, #0cd805 58%, gold 42%);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.captcha {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.navbar {
+  display: flex;
+  padding-right: 50px;
+  font-weight: 1500;
+  flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(248, 166, 58);
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.scrolled #title {
+  color: aqua;
+}
+
+.scrolled nav a {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.scrolled nav button {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.scrolled .dropdown-content a {
+  font-weight: 450;
+}
+
+.scrolled headertitle {
+  color: rgb(109, 136, 109);
+}
+
+.sub-body {
+  margin-top: 700px;
+  /* padding: 20px; */
+}
+
+.HPcontainer {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/* .row-cols-lg-3 .feature {
+    flex: 0 0 100%;
+    max-width: 100%;
+  } */
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.feature-icon img {
+  max-height: 60px; /* Adjust the max-height as needed */
+  width: auto;
+}
+
+.feature-content {
+  text-align: center;
+}
+
+.pb-2 {
+  font-weight: 750;
+  font-size: 30px;
+  color: black;
+}
+
+.fs-2 {
+  font-size: 20px;
+  font-weight: 480;
+  margin-bottom: 10px;
+}
+
+.text-body-emphasis {
+  color: #007bff;
+}
+/* 
+CAROUSEL */
+
+#myCarousel {
+  width: 90%;
+  margin: auto;
+}
+
+.carousel-inner img {
+  border-radius: 15px;
+  margin-right: 10px;
+  object-fit: cover;
+  max-height: 700px;
+}
+
+/* BOOKING-LINKS */
+
+.book-Section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.book-Section a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  padding: 20px 60px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  font-size: x-large;
+  font-weight: 600;
+  background: linear-gradient(to right, #3498db, #9deb70);
+}
+
+.book-Section a:hover {
+  background: linear-gradient(to right, #9759fa, #9ed9fe);
+}
+
+/* FOOTER-SECTION */
+
+/* .custom-footer{
+    background-color: rgb(183, 5, 5);
+} */
+
+.lastsec {
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.card-header {
+  font-size: 40px;
+  font-weight: 600;
+  color: #6bbe33;
+}
+
+.card-body {
+  color: #94949e;
+}
+
+.social-media-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.social-media-icons img:hover {
+  filter: brightness(60%);
+}
+
+/* 
+#contact {
+    margin-top: 50px; /* Add margin-top 
+    padding: 50px 0; /* Add padding for better spacing 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+}
+
+#contact .box {
+    max-width: 500px; /* Adjust the max-width for the container 
+    width: 100%;
+}
+
+#contact input,
+#contact textarea {
+    margin: 10px 0; /* Shorten the shorthand for top and bottom margin 
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height 
+}
+
+#contact button {
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #31b0d5;
+} */
+
+@media (max-width: 768px) {
+  body.scrolled #title {
+    color: aqua;
+  }
+
+  body.scrolled nav {
+    display: none; /* Hide the entire navigation */
+  }
+
+  body.scrolled .dropdown {
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+  }
+
+  body.scrolled nav a {
+    margin: 0; /* Remove margin between navigation links on smaller screens */
+  }
+
+  body.scrolled .centered-text {
+    top: 20%; /* Adjusted top position for smaller screens */
+  }
+}
+
+.explore-farms {
+  font-family: "Black Ops One", system-ui;
+  font-size: 32px;
+  padding: 20px;
+  font-weight: 800;
+  text-align: "center";
+  color: bisque;
+  /* animation: colorChange 4s infinite; */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.custom-dropdown {
+  position: relative;
+  margin-left: 60px; 
+}
+
+.dropdown-button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #16df00;
+  color: rgb(17, 3, 3);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+  background-color: #41b047;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dddfd8;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-container:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+.dropdown-button.open {
+  background-color: #6a9d6a;
+}
+
+.dropdown-button.open + .dropdown-content {
+  display: block;
+} */
+
+.center-container-H {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust form styles */
+.form-group {
+  width: 500px; /* Adjust the width as needed */
+}
+
+.label-H {
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+}
+
+.textarea-style {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.btn-H {
+  background-color: #5fb062;
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-H:hover {
+  background-color: #61f669;
+}
+
+.explore-farms {
+  font-family: "Black Ops One", system-ui;
+  font-size: 32px;
+  padding: 20px;
+  font-weight: 800;
+  text-align: "center";
+  color: bisque;
+  /* animation: colorChange 4s infinite; */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.custom-dropdown {
+  position: relative;
+  margin-left: 60px; /* Adjust the value according to your preference */
+}
+/* 
+.dropdown-button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #16df00;
+  color: rgb(17, 3, 3);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+  background-color: #41b047;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dddfd8;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-container:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+.dropdown-button.open {
+  background-color: #6a9d6a;
+}
+
+.dropdown-button.open + .dropdown-content {
+  display: block;
+} */
+/* 
+ /* */
+*/
+ /*  */
+ /*  */
+ /*  */
+ 
+/* Existing CSS styles */
+
+/* Add media queries for responsiveness */
+/* @media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 5%;
+    backdrop-filter: blur(0px);
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 0;
+    /* margin-top: 5px; 
+  }
+
+  .navbar a {
+    margin: 0px 0;
+  }
+
+  #title {
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .centered-text h1 {
+    font-size: 40px;
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #title {
+    font-size: 30px;
+  }
+
+  .centered-text h1 {
+    font-size: 10px;
+  }
+} */
+
+/* Existing CSS styles */
+
+/* New CSS for collapsible navbar */
+.navbar-toggler {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar-links.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+/* .open:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open:nth-child(2) {
+  opacity: 0;
+}
+
+.open:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+} */
+
+@media screen and (max-width: 1068px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-links-HP {
+    margin-top: 10px;
+  }
+
+  .navbar-links-HP a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .book-Section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    align-items: center;
+  }
+
+  .book-Section a {
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #title {
+    font-size: 40px;
+  }
+
+  .navbar-links-HP {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .navbar-links-HP a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

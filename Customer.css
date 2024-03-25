@@ -1,0 +1,344 @@
+#title-C {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* height: 80px; */
+  padding: 0 0 0 80px;
+  background-color: transparent;
+  z-index: 1000; /* Ensure it's above other content */
+  font-family: "Black Ops One", system-ui;
+  font-size: 50px;
+  /* padding-left: 100px; */
+  font-weight: 800;
+  transition: color 0.5s ease;
+  /* background: linear-gradient(147deg, #fffb00 58%, rgb(251, 255, 0) 42%);
+  -webkit-background-clip: text; */
+  color: rgb(255, 255, 0);
+  cursor: grab;
+  /* margin: 0 auto; */
+}
+
+.captcha {
+  font-weight: normal; /* Reset font weight if needed */
+}
+.navbar-C {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 30px;
+  align-items: center;
+  /* align-self: flex-end; */
+}
+
+.navbar-C a {
+  margin-right: 30px; /* Adjust spacing between links */
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navbar-C a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  /* background: linear-gradient(90deg, #fff, #00ff00); */
+  background-color: rgba(246, 255, 0, 0.93); /* Set underline color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-C a:hover {
+  /* color: #007bff;  */
+  color: rgb(255, 255, 255);
+}
+
+.navbar-C a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  box-shadow: 0 0 10px 0 rgb(239, 214, 68);
+}
+
+.quote-C {
+  text-align: center;
+  font-size: 86px;
+  color: rgba(255, 255, 255, 0.932);
+  line-height: 1.5; /* Adjust line spacing as needed */
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  line-height: 90px;
+  letter-spacing: -0.024em;
+  margin-top: 150px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.quote {
+  text-align: center;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: rgba(255, 255, 255, 0.377); /* Adjust the color as needed */
+  margin-top: 20px;
+}
+
+#collective-tour-cards {
+  margin-top: 280px;
+  background-color: #1e1d1d3c;
+}
+
+*/ #slideshow {
+  margin: 0 auto;
+  padding-top: 250px;
+  height: 600px;
+  width: 100%;
+  /* background-color: #6adecd; */
+  box-sizing: border-box;
+}
+
+.slideshow-title {
+  font-family: "Allerta Stencil";
+  font-size: 62px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25%;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.sub-heading {
+  padding-top: 50px;
+  font-size: 18px;
+}
+.sub-heading-two {
+  font-size: 15px;
+}
+.sub-heading-three {
+  font-size: 13px;
+}
+.sub-heading-four {
+  font-size: 11px;
+}
+.sub-heading-five {
+  font-size: 9px;
+}
+.sub-heading-six {
+  font-size: 7px;
+}
+.sub-heading-seven {
+  font-size: 5px;
+}
+.sub-heading-eight {
+  font-size: 3px;
+}
+.sub-heading-nine {
+  font-size: 1px;
+}
+
+.entire-content {
+  margin: auto;
+  width: 190px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+
+.content-carrousel {
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.content-carrousel figure {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #3b444b;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 1px;
+}
+
+.content-carrousel img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+
+.content-carrousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
+/* .tour-card1 { */
+/* width: calc(25% - 20px);
+  margin: 20px 10px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(141, 36, 36, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px; */
+/* width: "300px";
+  margin: "20px";
+  border-radius: "10px";
+  padding: "20px";
+  border: "1px solid #ddd";
+}
+
+
+
+.tour-card1:hover::before {
+  opacity: 1;
+} */
+.tours-container1 {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tour-card1 {
+  width: 400px;
+  margin: 20px;
+  background-color: #ffffffeb;
+  border: 15px rgba(128, 128, 128, 0.963) solid;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 40px 80px rgba(185, 6, 0, 0.919),
+    0 80px 160px rgba(60, 214, 4, 0.333);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.tour-card1:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.tour-card1 h3 {
+  margin-bottom: 20px;
+  font-family: "Old Standard TT", serif;
+  font-weight: 1000;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.tour-card1 button {
+  margin-top: auto;
+  cursor: pointer;
+  /* background: linear-gradient(to right, #0739ff, #45a049); Gradient color */
+  background-color: #d1ce20ec;
+  color: rgb(0, 0, 0);
+  padding: 10px 25px 10px 25px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 25px;
+  transition: background 0.3s ease; /* Smooth transition on hover */
+}
+
+.tour-card1 button:hover {
+  background: linear-gradient(
+    to right,
+    #00ff1a9a,
+    #fffb00
+  ); /* Gradient color on hover */
+}
+
+.tour-card-content {
+  padding: 20px;
+}
+
+.tour-card-content h3 {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tour-card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+#id1 {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .navbar-C {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-left: 50px;
+  }
+}

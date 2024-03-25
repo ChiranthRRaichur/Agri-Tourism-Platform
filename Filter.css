@@ -1,0 +1,61 @@
+/* Customer.css */
+
+.filter-container {
+  position: fixed;
+  top: 50px; /* Adjust as needed */
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.filter-option {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.filter-option p {
+  cursor: pointer;
+  color: #333;
+}
+
+.filter-option:hover .location-dropdown,
+.filter-option:hover .price-checkboxes,
+.filter-option:hover .capacity-options {
+  display: block;
+}
+
+.location-dropdown,
+.price-checkboxes,
+.capacity-options {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.location-dropdown p,
+.price-checkboxes input,
+.capacity-options p {
+  cursor: pointer;
+  color: #333;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

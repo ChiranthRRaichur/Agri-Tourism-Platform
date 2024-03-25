@@ -1,0 +1,42 @@
+.container-VB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-cards-VB {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.booking-card-VB {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(50% - 20px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #04ff00;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.booking-info {
+  display: flex;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+  margin-right: 8px;
+}

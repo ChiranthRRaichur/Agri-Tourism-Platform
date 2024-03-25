@@ -1,0 +1,229 @@
+.field-wrap-FL {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.farm-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Responsive grid */
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.farm_cardFL {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 5px solid rgba(32, 51, 4, 0.859);
+  border-radius: 18px;
+  background-color: #d6d6d0f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.farm_cardFL:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.farm_cardFL h3 {
+  /* align-items: center; */
+  text-align: center;
+  margin-top: 0;
+  color: #495f00e3;
+  font-weight: 800;
+}
+
+.farm_cardFL p {
+  padding-top: 20px;
+  margin: 0;
+  color: #060e03c8;
+  flex-grow: 1; /*the text area expand to fill available space */
+}
+
+.farm_cardFL div {
+  display: flex;
+  justify-content: space-between; /* Align items in a line */
+  align-items: flex-end;
+}
+
+/* .farm_cardFL a {
+  color: #007bff;
+  text-decoration: none;
+} */
+
+.arrow-link {
+  margin: 0 auto;
+  font-size: larger;
+}
+
+.arrow-link:hover {
+  cursor: pointer;
+  color: rgba(3, 3, 242, 0.799);
+  text-decoration: underline;
+}
+
+.farm_cardFL button {
+  color: #06121f;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: aliceblue;
+  font-weight: 800;
+  border: rgb(162, 170, 100) solid;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+  padding: 10px;
+  margin: 0 5px 5px;
+
+  /* transition: background-color 0.3s; */
+}
+
+/* .farm_cardFL a:hover, */
+.farm_cardFL button:hover {
+  /* text-decoration: underline; */
+  background-color: rgb(117, 168, 117);
+  color: rgb(255, 255, 255);
+}
+
+.edit-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px; /* Adjust the width as needed */
+}
+
+.edit-dialog input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-dialog button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-dialog button:hover {
+  background-color: #0056b3;
+}
+
+.edit-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure the overlay appears above other content */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+Blurred background .blurred-background {
+  filter: blur(4px); /* Adjust the blur intensity as needed */
+}
+.fixed-button-container {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.fixed-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  border-radius: 50%; /* Make it round */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  cursor: pointer;
+  transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Smooth transition */
+
+  .button-text {
+    display: none; /* Initially hide the text */
+  }
+
+  /* Style for the button icon */
+  .button-icon {
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+
+  &:hover {
+    width: 150px; /* Expand width on hover */
+    background-color: #0056b3; /* Change background color on hover */
+
+    /* Show the text on hover */
+    .button-text {
+      display: inline-block;
+      margin-left: 10px; /* Add some space between icon and text */
+    }
+  }
+}
+/*
+@media screen and (max-width: 1024px) {
+  .farm-cards-container {
+    grid-template-columns: repeat(3, 1fr); /* Adjust grid for smaller screens 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .farm-cards-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust grid for even smaller screens 
+  }
+
+  .farm_cardFL {
+    padding: 10px; /* Adjust padding for smaller cards 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .farm-cards-container {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Adjust grid to a single column for smallest screens 
+  }
+}
+
+/* Additional styling for responsiveness 
+.fixed-button-container {
+  /* display: none; Hide the fixed button container by default 
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-button-container {
+    display: block; /* Show the fixed button container on smaller screens 
+  }
+} */

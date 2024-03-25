@@ -1,0 +1,147 @@
+.B-body {
+  /* background-image: url("https://img.freepik.com/free-photo/abstract-textured-oil-painting_53876-88722.jpg?t=st=1709151133~exp=1709154733~hmac=a583c1ae8180d89fbf33bc0ff3fe17f4b9de85b5d0cc265a34631be9a2206959&w=996"); */
+  min-height: 118vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: hidden;
+}
+
+#title-C-B {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* height: 80px; */
+  padding: 0px 0 0 80px;
+  background-color: transparent;
+  z-index: 1000; /* Ensure it's above other content */
+  font-family: "Black Ops One", system-ui;
+  font-size: 50px;
+  /* padding-left: 100px; */
+  font-weight: 800;
+  font-weight: 800;
+  transition: color 0.5s ease;
+  background: linear-gradient(147deg, #51ff00 58%, rgb(251, 255, 0) 42%);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: grab;
+}
+
+.captcha {
+  font-weight: normal; /* Reset font weight if needed */
+}
+.navbar-C-B {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 30px;
+  align-items: center;
+  /* align-self: flex-end; */
+}
+
+.navbar-C-B a {
+  margin-right: 30px; /* Adjust spacing between links */
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navbar-C-B a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  /* background: linear-gradient(90deg, #fff, #00ff00); */
+  background-color: rgb(18, 214, 214); /* Set underline color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-C-B a:hover {
+  /* color: #007bff;  */
+  color: rgba(29, 37, 37, 0.682);
+}
+
+.navbar-C-B a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  box-shadow: 0 0 10px 0 rgb(239, 214, 68);
+}
+
+.booking-container {
+  /* background-color: rgb(3, 0, 0); */
+  min-height: 100vh;
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* Apply linear gradient to the border */
+  /* border: 8px solid rgb(66, 36, 36); */
+
+  /* border-image: linear-gradient(to right, #ff8a00, #e52e71); */
+  /* border-image-slice: 1; */
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-B {
+  max-width: 500px;
+  width: 100%;
+}
+
+.label-B {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 3px;
+  font-size: large;
+}
+
+.input-B {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #7165659b;
+  border-radius: 4px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.button-bc {
+  padding: 15px;
+  margin: 8px;
+  background-color: rgba(25, 1, 210, 0.955);
+  color: #fff;
+  font-weight: 800;
+  /* border: 2px solid #2a2a2a; */
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-items: center;
+}
+
+b.button-bc:hover {
+  background-color: #ff8a00;
+}
+
+.confirmed {
+  text-align: center;
+}
+
+.confirmed img {
+  width: 150px;
+  height: 150px;
+}
+
+/* .abc {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+} */

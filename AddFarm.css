@@ -1,0 +1,121 @@
+/* AddFarm.css */
+
+.bg-AF-img {
+  background-image: url("https://img.freepik.com/free-vector/nature-background-with-many-leaves-copyspace_1017-26905.jpg?t=st=1709027721~exp=1709031321~hmac=9416cd956702ba82fc8e63a6a9e884d7a1f9b6ce2f6984b9e19e4be2587f8ecf&w=1060");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+#title-AF {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* height: 80px; */
+  padding: 0px 0 0 80px;
+  background-color: transparent; /* Add a background color if needed */
+  z-index: 1000; /* Ensure it's above other content */
+  font-family: "Black Ops One", system-ui;
+  font-size: 50px;
+  /* padding-left: 100px; */
+  font-weight: 800;
+  font-weight: 800;
+  transition: color 0.5s ease;
+  background: linear-gradient(147deg, #0cd805 58%, gold 42%);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: grab;
+}
+
+.captcha {
+  font-weight: normal; /* Reset font weight if needed */
+}
+.navbar-AF {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: larger;
+  /* background-color: #f2f2f2; Add a background color if needed */
+}
+
+.navbar-AF a {
+  margin-right: 30px; /* Adjust spacing between links */
+  text-decoration: none;
+  color: #333; /* Set link color */
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.navbar-AF a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  /* background: linear-gradient(90deg, #fff, #00ff00); */
+  background-color: #5cda2ac6; /* Set underline color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-AF a:hover {
+  /* color: #007bff;  */
+  color: rgba(7, 202, 27, 0.736);
+}
+
+.navbar-AF a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  box-shadow: 0 0 10px 0 rgb(239, 214, 68);
+}
+
+.farm-container-AF {
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 20px;
+  border: 5px solid rgb(205, 180, 36);
+  border-radius: 244px solid;
+  /* border-image: linear-gradient(to right, #ff8a00, #e52e71); */
+  border-image-slice: 10;
+  /* background-color: rgba(0, 0, 255, 0.668); */
+}
+
+.farm-container-AF h1 {
+  text-align: center;
+  color: #ffffff;
+  /* background-color: blue; */
+}
+
+.F-form-AF {
+  margin-top: 15px;
+}
+
+.form-AF {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0 0;
+  box-sizing: border-box;
+  border: 7px solid #10527967;
+  border-radius: 4px;
+  color: rgb(27, 25, 24);
+  background-color: rgba(255, 255, 255, 0.818);
+}
+
+.btn-AF {
+  background-color: #95ae31c2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.btn-AF:hover {
+  background-color: #45a049;
+}

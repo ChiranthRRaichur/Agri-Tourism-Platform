@@ -1,0 +1,151 @@
+#title-FT {
+  font-family: "Black Ops One", system-ui;
+  font-size: 50px;
+  padding-left: 100px;
+  font-weight: 800;
+  transition: color 0.5s ease;
+  background: linear-gradient(147deg, #0cd805 58%, gold 42%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.navbar-container-FT {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffffff0; /* Set your desired background color */
+  /* padding: 10px 20px; Adjust padding as needed */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.navbar-links-FT {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-link-FT {
+  margin-right: 20px; /* Adjust the margin between links as needed */
+  text-decoration: none;
+  color: #201f1f; /* Set your desired text color */
+  font-weight: 600;
+  font-size: 22px;
+  left: 55;
+}
+
+.nav-link-FT:hover {
+  color: #e6e21f; /* Set the color for hover state */
+}
+
+.farm-tours-container-FT {
+  padding: 20px;
+  margin-top: 75px;
+  /* background-color: #145509a9; */
+}
+
+.farm-tours-container-FT h2 {
+  color: black;
+  font-family: "Black Ops One", system-ui;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tour-cards-container-FT {
+  padding-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: space-between; */
+
+  /* justify-content: space-between; */
+}
+
+.tour-card-FT {
+  background-color: #fff;
+  border: solid rgba(232, 24, 24, 0.385);
+  border-radius: 12px;
+  box-shadow: 0 14px 18px rgba(66, 255, 3, 0.1);
+  background-color: #f8f8f89d;
+  padding: 20px;
+  width: calc(25% - 20px); /* Adjust the width as per your requirement */
+}
+
+.tour-card-FT input[type="text"],
+.tour-card-FT button {
+  margin-top: 10px;
+}
+
+/* Additional styles as needed */
+
+.btn-FT {
+  background-color: rgb(61, 61, 95);
+  color: white;
+  margin-right: 30px;
+  padding: 8px 18px 8px 18px;
+  border-radius: 20px;
+  border: 5px solid wheat;
+  font-weight: 600;
+}
+
+.btn-FT:hover {
+  background-color: rgba(12, 10, 5, 0.889);
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .farm-tours-container-FT {
+    margin-top: 0px;
+    padding: 10px;
+  }
+
+  .farm-tours-container-FT h2 {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+
+  .tour-cards-container-FT {
+    gap: 15px;
+  }
+
+  .tour-card-FT {
+    width: calc(50% - 10px);
+  }
+  #title-FT {
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+  }
+  .nav-link-FT {
+    display: none;
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+  .farm-tours-container-FT {
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+  .farm-tours-container-FT h2 {
+    font-size: 30px;
+  }
+
+  .tour-cards-container-FT {
+    gap: 10px;
+  }
+
+  .tour-card-FT {
+    width: 100%;
+  }
+
+  .btn-FT {
+    margin-right: 10px;
+  }
+}

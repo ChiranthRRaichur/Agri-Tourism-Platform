@@ -1,0 +1,217 @@
+.bg-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image img {
+  width: 100%;
+  /* height: 200%; */
+  position: fixed;
+  /* background-repeat: no-repeat cover; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.7; /* You can adjust the opacity to your preference */
+}
+
+#title-L {
+  font-family: "Black Ops One", system-ui;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  transition: color 0.5s ease;
+  color: gold;
+  background: linear-gradient(147deg, #0cd805 58%, gold 42%);
+  -webkit-background-clip: text;
+  /* margin-right: 100px; */
+  /* left: 500px; */
+}
+/* 
+#titlee a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+.use {
+  font-family: "Titillium Web", sans-serif;
+  background-color: transparent;
+  /* overflow-y: scroll; */
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(15, 14, 14);
+  font-weight: 900;
+  font-size: larger;
+}
+
+.form {
+  /* background: rgba(29, 51, 69, 0.9); */
+  /* background: rgba(240, 231, 103, 0.5); */
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(31, 53, 70, 0.9);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.tab {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+  /* background: #a0b3b0; */
+  color: #feffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.tab:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.tab.active {
+  background: #1ab188;
+  /* color: #ffffff; */
+}
+
+.tab-content > div {
+  display: none;
+}
+
+#login h1 {
+  text-align: center;
+  color: #000000;
+  /* font-weight: 300; */
+  margin: 0 0 40px;
+  font-weight: 1000;
+}
+
+/* Add these styles to your CSS file */
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+}
+
+select option {
+  padding: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+select option:disabled {
+  color: #999;
+}
+
+select option:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style the placeholder text */
+select option[disabled]:before {
+  content: "Choose a Role*";
+  color: #999;
+}
+
+/* Style the selected option */
+select option:checked {
+  background-color: #4caf50;
+  color: white;
+}
+
+input,
+textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  /* height: 50%; */
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 2px solid rgb(128, 119, 0);
+  border-radius: 5px;
+  color: #000000;
+  border-radius: 8px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+textarea {
+  border: 2px solid #ddd;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top-row > div {
+  /* float: left; */
+  width: 48%;
+  margin-right: 4%;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #1ab188;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.button:hover,
+.button:focus {
+  background: #05a16a;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+/* Add this CSS to your existing styles */
+
+.field-wrap {
+  margin-bottom: 20px; /* Adjust margin between fields */
+}
+
+.role-field {
+  margin-bottom: 20px; /* Add margin to role field */
+}
+
+.password-field {
+  margin-top: 20px; /* Add margin to password field */
+}
