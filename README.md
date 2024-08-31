@@ -3,8 +3,8 @@
 FieldVista is a web application that connects farmers with customers interested in agritourism experiences. It allows farmers to showcase their farms and offer tours, while customers can browse and book these tours.
 
 ## Technologies Used:
-React.js
-Express.js
+React,
+Express js,
 MySQL
 
 ## Features:
